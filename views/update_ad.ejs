@@ -1,0 +1,71 @@
+<%- include('include/_header') %>
+
+  <main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+          <div class="filter">
+              <a href="/"><i class="fas fa-angle-double-left"></i> Anuncios</a>
+          </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">Actualizar anuncio</h2>
+            <span class="text-light">Ingresa los datos a modificar de tu anuncio</span>
+        </div>
+
+ <form method="POST" id="update_ad">
+    <div class="newAd">
+        <div class="form-group">
+            <label for="article" class="text-light">Artículo</label>
+            <input type="hidden" name="id" value="<%= ad._id %>">
+            <input type="text" name="article" value="<%= ad.article %>"  placeholder="Xbos Series One">
+        </div>
+        <div class="form-group">
+            <label for="operationType" class="text-light">Modalidad</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-2" name="operationType" value="sell" <%= ad.operationType == 'sell' ? 'checked' : '' %>>
+                <label for="radio-2" class="radio-label">Vendo</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="operationType" value="wanted" <%= ad.operationType == 'wanted' ? 'checked' : '' %>>
+                <label for="radio-3" class="radio-label">Busco</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="price" class="text-light">Precio</label>
+            <input type="hidden" name="id" value="<%= ad.price%>"> 
+            <input type="text" name="price" value="" placeholder="900">
+        </div>
+        <div class="form-group">
+            <label for="image" class="text-light">Imagen</label>
+            <input type="hidden" name="id" value="<%= ad.image%>">
+            <input type="text" name="image" value="" placeholder="Url de imagen">
+        </div>
+
+        <div class="form-group">
+            <label for="category" class="text-light">Categoría</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-4" name="category" value="electronics" <%= ad.category == 'electronics' ? 'checked' : '' %>>
+                <label for="radio-4" class="radio-label">electronics</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-5" name="category" value="clothes" <%= ad.category == 'clothes' ? 'checked' : '' %>>
+                <label for="radio-5" class="radio-label">Ropa</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-6" name="category" value="mobility" <%= ad.category == 'mobility' ? 'checked' : '' %>>
+                <label for="radio-6" class="radio-label">Mobilidad</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-7" name="category" value="musical" <%= ad.category == 'musical' ? 'checked' : '' %>>
+                <label for="radio-7" class="radio-label">Música</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+    </div>
+</form>
+</main>
+
+<%- include('include/_footer') %>

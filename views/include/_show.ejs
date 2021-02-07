@@ -1,0 +1,18 @@
+<% for(var i = 0; i < ads.length; i++) { %>
+  <tr>
+      <td><%= i + 1 %></td>
+      <td><%= ads[i].article %></td>
+      <td><%= ads[i].operationType %></td>
+      <td><%= ads[i].price %></td>
+      <td><%= ads[i].image %></td>
+      <td><%= ads[i].category %></td>
+      <td>
+          <a href="/update-ad?id=<%= ads[i]._id%>" class="btn border-shadow update">
+              <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+          </a>
+          <a class="btn border-shadow delete" data-id=<%= ads[i]._id%> >
+              <span class="text-gradient"><i class="fas fa-times"></i></span>
+          </a>
+      </td>
+  </tr>
+  <% } %>

@@ -1,0 +1,72 @@
+[
+  {
+    "article": "Sony PlayStation 5",
+    "operationType": "wanted",
+    "price": 900,
+    "image": "PS5.jpg",
+    "category": "electronics"
+  },
+  {
+    "article": "Google Pixel Earbuds",
+    "operationType": "sell",
+    "price": 179,
+    "image": "Gpixel.jpg",
+    "category": "electronics"
+  },
+  {
+    "article": "Apple iPhone 12 Pro Max",
+    "operationType": "sell",
+    "price": 1319,
+    "image": "Applei12.png",
+    "category": "electronics"
+  },
+  {
+    "article": "New England Patriots NFL Jersey M",
+    "operationType": "wanted",
+    "price": 31,
+    "image": "ningland.jpg",
+    "category": "clothes"
+  },
+  {
+    "article": "New Balance Men Sneekers",
+    "operationType": "sell",
+    "price": 45,
+    "image": "nbalance.jpg",
+    "category": "clothes"
+  },
+  {
+    "article": "Ford Mustang 1966 Convertible",
+    "operationType": "wanted",
+    "price": 105000,
+    "image": "Mustang.jpg",
+    "category": "mobility"
+  },
+  {
+    "article": "Orbea Bycicle M20 2019",
+    "operationType": "sell",
+    "price": 4900,
+    "image": "orbea.jpg",
+    "category": "mobility"
+  },
+  {
+    "article": "Dean Electric Guitar Dimebag",
+    "operationType": "sell",
+    "price": 799,
+    "image": "Dimebag.jpg",
+    "category": "musical"
+  },
+  {
+    "article": "ESP LTD Kh-202 Signature Kirk Hammett",
+    "operationType": "wanted",
+    "price": 5358,
+    "image": "ESPLTD.jpg",
+    "category": "musical"
+  },
+  {
+    "article": "Xioami Electric Scooter Mi365",
+    "operationType": "wanted",
+    "price": 499,
+    "image": "Mi365.jpg",
+    "category": "mobility"
+  }
+]
